@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+main .container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+main .container section {
+  padding: 30px 0;
+}
