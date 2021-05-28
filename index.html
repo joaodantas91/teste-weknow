@@ -15,13 +15,39 @@
 
         <section>
           <h3>Adicionar um novo produto</h3>
+          <input type="text" id="POST-input-description">
+          <button onclick="HandlePostProduct()">Adicionar novo produto</button>
+        </section>  
+        
+        <section id="get-one">
+          <h3>Recuperar um produto existente</h3>
+          <input type="text" id="GET-input-id">
+          <button onclick="HandleGetOneProduct()">Adicionar novo produto</button>
+          <div class="products-wrapper"></div>
         </section>
 
         <section>
+          <h3>Atualizar dados de um produto existente</h3>
+          <input type="text" id="PUT-input-id" placeholder="id do produto">
+          <input type="text" id="PUT-input-description" placeholder="digite a nova descrição">
+          <button onclick="HandlePutProduct()">Editar produto</button>
+        </section>
+
+        <section>
+          <h3>Remover um produto existente</h3>
+          <input type="text" id="DELETE-input-id" placeholder="id do produto">
+          <button onclick="HandleDeleteProduct()">Editar produto</button>
+        </section>
+
+        <section id="get-all">
           <h3>Listar dados de todos os produtos</h3>
-          <button>Lista todos os produtos</button>
+          <button onclick="HandleGetAllProducts()">
+            Lista todos os produtos
+          </button>
           <div class="products-wrapper"></div>
         </section>
+
+        
       </div>
     </main>
 
